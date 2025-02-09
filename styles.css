@@ -1,0 +1,118 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 20px;
+    font-size: 1.8em;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Sections */
+section {
+    background: #1e1e1e;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 700px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+/* Lists */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    color: white;
+    margin: 5px;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+ul li:hover {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: #181818;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 1em;
+    box-shadow: 0px -4px 8px rgba(255, 255, 255, 0.1);
+}
+
+footer a {
+    color: #ff7eb3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #ff758c;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    section {
+        width: 90%;
+    }
+}
+
+/* Dark Mode Toggle */
+button {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    transform: scale(1.1);
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #000;
+    color: #ddd;
+}
+
+.dark-mode section {
+    background-color: #222;
+}
+
+.dark-mode ul li {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+}
+
+.dark-mode footer {
+    background: #111;
+}
